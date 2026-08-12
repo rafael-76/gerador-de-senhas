@@ -1,23 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gerenciador de senhas</title>
-    <limk rel="stylesheet" href="style.css"></limk>
+    <title>Gerenciador de Senhas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <div  class="container">
+    <div class="container">
         <div class="header">
             <h1>Gerenciador de Senhas</h1>
+        </div>
+
+        <div class="display-box">
+            <span id="password">Senha</span>
+            <button class="copy-btn" id="copybtn" title="Copiar">Copiar</button>
+        </div>
+
+        <div class="custom-section">
+            <h2>Personalize sua senha</h2>
+
+            <div class="control-group">
+                <span class="control-label">Número de caracteres</span>
+
+                <div class="counter">
+                    <button id="decrement">-</button>
+                    <span id="lengthVal">12</span>
+                    <button id="increment">+</button>
+                </div>
+            </div>
+
+            <button class="generate-btn" id="generateBtn">Gerar Nova Senha</button>
+        </div>
     </div>
 
-    <div class="display-box">
-        <span  id="password">Senha</span>
-        <button class="copy-btn" id="copybtn" title="Copiar">Copiar</button>
-    </div>
-
-    <div class="custom-section"></div>
+    <script src="script.js"></script>
 </body>
 </html>
